@@ -1,0 +1,19 @@
+// =============================================
+// BORDERS
+// =============================================
+
+@each $key, $val in $colors {
+  .border-#{$key} {
+    border-color: $val;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .border-styled-#{$key} {
+    border-color: $val;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0.8rem 0.8rem 1.4rem $gray-400, -0.2rem -0.2rem 1.8rem $white;
+  }
+}
